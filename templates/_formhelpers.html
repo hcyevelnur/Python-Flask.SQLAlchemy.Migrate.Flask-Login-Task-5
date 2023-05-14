@@ -1,0 +1,9 @@
+{% macro render_field(field) %}
+  {{ field.label }}
+  {{ field(class="input--style-4")}}
+  {% if field.errors %}
+    <ul class=errors>
+    </ul>
+  {% endif %}
+  </dd>
+{% endmacro %}

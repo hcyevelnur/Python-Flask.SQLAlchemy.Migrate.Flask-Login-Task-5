@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% from "_formhelpers.html" import render_field %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+
+<form action="" method="POST">
+    {{ form.csrf_token }}
+    <div class="page-wrapper p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">Codelandia ilə Başla!</h2>
+                    <form method="POST">
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                  {{ render_field(form.name)}}                                  
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    {{ render_field(form.last_name)}}                                  
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    {{ render_field(form.username)}}                                  
+                                  </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    {{ render_field(form.email)}}                                  
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    {{ render_field(form.phone)}}                                  
+                                  </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    {{ render_field(form.password)}}                                  
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="p-t-15">
+                            <button class="btn btn--radius-2 btn--blue" type="submit">Başla!</button><a href="/login" style="margin-left: 10px; text-decoration: none;"><span>Hesabım var</span></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+{% endblock %}
+

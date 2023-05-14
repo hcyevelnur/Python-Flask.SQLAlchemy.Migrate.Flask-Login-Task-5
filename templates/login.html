@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <title>Codelandia - Giriş</title>
+
+  <form action="" method="POST">
+    {{ form.csrf_token }}
+    <div style="padding-top: 150px;" class="wrapper fadeInDown">
+        <div id="formContent">
+          <h2 class="active">Kabinetə giriş </h2>
+      <div >
+        <br>
+          <form>
+            <p style="margin-bottom: -5px;">İstifadəçi adı</p>
+            {{ form.username }} 
+            <br>
+            <br>
+            <p style="margin-bottom: -5px;">Şifrə</p>   
+            {{ form.password(style="-webkit-text-security: disc;") }}                                
+            <div style="padding-top: 20px;">
+            </div>
+            {% if error %}
+            <p style="color:red">{{ error }}</p>
+          {% endif %}
+          </form>
+          <a href=""><button class="elnur-button" type="submit">Giriş Et</button></a>
+        </div>
+        <br>
+        <a href="/qeydiyyat" style="color: #4b36d0; ">Hesabim yoxdur</a>
+        <br>
+        <br>
+          <div id="formFooter">
+            <a style="color: #4b36d0;"  class="underlineHover" href="#">şifrəmi unutmuşam.</a>
+          </div>
+          
+        </div>
+      </div>
+    </form>
+
+{% endblock %}

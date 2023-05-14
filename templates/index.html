@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Tech Camp</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/fv.ico') }}"></head>
+<body 
+style="font-family: sans-serif; background-image: url(../static/img/Savin-NY-Website-Background-Web-1.jpeg);
+height: auto; background-size: cover;"
+class="bg-image"
+>
+<div
+
+></div>
+    <div class="umumi-1" style="text-align: center;">
+      <h1>Codelandia</h1>
+    <div>
+        <h5 class=" text-1">
+            Rəqəmsallaşan dünyanın<br> yeni 
+            proqramlaşdırma rəhbəri.
+        </h5>
+        <p class="text-2" style="font-weight: 300; font-size:17px; padding-top: 70px;">Tələbə və işçi Codelandia 
+            platformaları axtarış 
+            imkanlarını və sizə lazım  olan məlumat və <br> resurslara 
+            daha asan çıxışı bir yerdən təmin edir.</p>
+    </div>
+
+    <div style="padding-top: 30px;">
+      <a href="/login"><button class="button-1">Tələbə portalı</button></a>
+
+        <a href="/contact"><button class="button-2 button-3 button5 text-3">ContactUs</button></a>
+
+
+    </div>
+
+    <div style="padding-top: 100px;">
+        <img class="img-1" style="width: 55%; border-radius:10px;" src="{{ url_for('static', filename='img/ekran-2.png') }}" alt="">
+    </div>
+
+    </div>
+
+    <section style="padding-top: 50px;">
+        <footer class="text-center text-white" style="background-color: transparent;">
+          <div class="container p-4 pb-0">
+            <section class="">
+              <p class="d-flex justify-content-center align-items-center">
+                <span style="color: white; font-weight: 400;" class="me-3">Tələbələr üçün qeydiyyat.</span>
+                <a href="/qeydiyyat"><button type="button" class="btn btn-outline-dark btn-rounded">
+                    Başla!
+                </button></a>
+              </p>
+            </section>
+          </div>
+      
+          <div class="text-center p-3" style="background-color: transparent">
+            <span style="color: white;" > © 2023 Made By Codelandia Students:</span>
+            <a style="color: #6959cd;" href="#">Codelandia.edu.az</a>
+          </div>
+        </footer>
+      </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>     
+</body>
+</html>
